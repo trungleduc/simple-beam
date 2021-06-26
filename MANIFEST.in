@@ -1,0 +1,17 @@
+include cosapp.json
+include environment.yaml
+include LICENSE
+include HISTORY.md
+include README.md
+
+recursive-include simple_beam/drivers *
+recursive-include simple_beam/ports *
+recursive-include simple_beam/resources *
+recursive-include simple_beam/studies *
+recursive-include simple_beam/systems *
+recursive-include simple_beam/tests *
+recursive-include simple_beam/tools *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+prune **/.ipynb_checkpoints
